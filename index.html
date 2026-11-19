@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FOR THE PLOT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>FOR THE PLOT - Sistem Terpadu</title>
   <style>
-    body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #f8fafc; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body, html { width: 100%; height: 100%; overflow: hidden; background: #f8fafc; }
     iframe { width: 100%; height: 100%; border: none; display: block; }
   </style>
 </head>
 <body>
-  <iframe id="appFrame" allow="bluetooth; clipboard-write"></iframe>
+  <iframe id="appFrame" allow="bluetooth *; clipboard-write *; fullscreen *"></iframe>
   <script>
-    const gasUrl = "https://script.google.com/macros/s/AKfycbxQ0Zci2M--bg26a_KtsMNB4y7euucJIaWQpAwHxJSsOHls1PZb93ITf9WWcn22xmVNFQ/exec";
+    // GANTI URL DI BAWAH INI DENGAN URL /exec TERBARU DARI GOOGLE APPS SCRIPT KAMU
+    const gasUrl = "https://script.google.com/macros/s/AKfycbwI9CDOvHRX6HEkIUEOnSC-QqXQD0hWheOJpEc5fpkA2JrgE3Ga_bv777A5-wI0eQXZLQ/exec";
+    
     document.getElementById("appFrame").src = gasUrl + window.location.search;
   </script>
 </body>
